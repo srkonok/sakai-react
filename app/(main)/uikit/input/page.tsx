@@ -90,10 +90,7 @@ const InputDemo: Page = () => {
         { name: 'Option 2', code: 'O2' },
         { name: 'Option 3', code: 'O3' }
     ];
-
-    useEffect(() => {
-        CountryService.getCountries().then((data) => setAutoValue(data));
-    }, []);
+   ;
 
     const searchCountry = (event: AutoCompleteCompleteEvent) => {
         setTimeout(() => {
